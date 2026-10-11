@@ -32,10 +32,15 @@ const Login = () => {
     }
   };
 
-  const googleLogin = useGoogleLogin({
-    onSuccess: handleGoogleLogin,
-    onError: handleGoogleLogin,
+const googleLogin = useGoogleLogin({
     flow: "auth-code",
+
+    onSuccess: handleGoogleLogin,
+
+    onError: (error) => {
+      console.error("Google login failed:", error);
+      toast.error("Google sign-in failed. Please try again.");
+    },
   });
   return (
     <div className="bg-page flex items-center justify-center p-4">
