@@ -10,7 +10,7 @@ export const server = "https://careerai-kh67.onrender.com";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <AppProvider>
-      <GoogleOAuthProvider clientId="725062504668-2dqnaksme7j73j26j86jonq1762mih4q.apps.googleusercontent.com">
+      <GoogleOAuthProvider clientId="748188604898-j12gj0jojm5de75oqjf34no3f71usro8.apps.googleusercontent.com">
         <App />
       </GoogleOAuthProvider>
     </AppProvider>
